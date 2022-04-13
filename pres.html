@@ -8,7 +8,7 @@ body {
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   text-align: center;
 }
-h1, h2, li {
+h1, h2, li, p{
   color: white;
   font-family: 'Roboto Mono', monospace;
 }
@@ -24,9 +24,9 @@ h1, h2, li {
 </ul>
 <h2>Important Qualities:</h2>
 <ul>
-<li>Sorta Patient. NOT ME</li>
-<li>Sorta Organized. NOT ME</li>
-<li>Sorta Calm. NOT ME</li>
+<li>Patient.</li>
+<li>Organized.</li>
+<li>Calm.</li>
 <li>Smart & <i><b>Investigative (my type)</b></i> ME</li>
 </ul>
 <h2>Duties:</h2>
@@ -48,5 +48,12 @@ h1, h2, li {
 </ul>
 <h1>Location: At Home or In an Office</h1>
 <h1>Salary: $44/hr, $90K annually</h1>
+<footer>
+<noscript>Copyright © TechnoDot. Licensed under MIT.</noscript>
+<p>Copyright © <span id="copy">2022</span> TechnoDot. Licensed under MIT.</p>
+</footer>
+<script>
+document.getElementById("copy").innerHTML = "Copyright © " + new Date().getFullYear() + " TechnoDot. Licensed under MIT.";
+</script>
 </body>
 </html>
