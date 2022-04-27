@@ -7,10 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
-  --secondary-color: #151226;
-  --contrast-color: #BF307F;
+  --secondary-color: #0000ff;
+  --contrast-color: #00ff00;
 }
 .overlay {
   position: absolute;
@@ -22,7 +21,6 @@
   z-index: -10;
   background-color: var(--contrast-color);
 }
-
 .container {
   display: flex;
   height: 100vh;
@@ -35,45 +33,37 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   transition: all .8s ease;
 }
-
 .container_content {
  width: 50%;
 }
-
 .container_content_inner {
   width: 80%;
   margin-left: 80px;
 }
-
 .container_outer_img {
   margin: 50px;
   width: 50%;
   overflow: hidden;
-}   
-    
+}
 .container_img {
   width: 100%;
   animation: slideIn 1.5s ease-in-out forwards;
 }
-
 .par {
   height: auto;
   overflow: hidden;
 }
-
-p{
+p {
   line-height: 28px;
   transform: translateY(300px);
   animation: slideUp .8s ease-in-out forwards .8s;
 }
-
 .btns {
   height: 100%;
   position: relative;
   width: 150px;
   overflow: hidden;
 }
-
 .btns_more {
   background: transparent;
   border: 1px solid var(--contrast-color);
@@ -88,12 +78,10 @@ p{
   transform: translateY(50px);
   animation: slideUp .8s ease-in-out  forwards 1s;
 }
-
 .title {
   overflow: hidden;
   height: auto;
 }
-
 h1 {
     font-size: 40px;
     color: var(--contrast-color);
@@ -101,7 +89,6 @@ h1 {
     transform: translateY(100px);
     animation: slideUp .8s ease forwards .5s;
 }
-
 @keyframes slideIn {
   0% {
     transform: translateX(500px) scale(.2);
@@ -110,7 +97,6 @@ h1 {
     transform: translateX(0px) scale(1);
   }
 }
-
 @keyframes slideUp {
   0% {
     transform: translateY(300px);
@@ -119,7 +105,6 @@ h1 {
     transform: translateY(0px);
   }
 }
-
 @keyframes expand {
   0% {
     transform: translateX(1400px);
